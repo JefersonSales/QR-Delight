@@ -2,13 +2,13 @@
 
 Delightful ways to use QR code with React.JS.
 
-** Installation **
+**Installation**
 
 ```bash
 npm i qr-delight
 ```
 
-** Usage **
+**Usage**
 
 ```javascript
 import React, { Component } from "react";
@@ -26,6 +26,6 @@ export default class MyQRcode extends Component {
 }
 ```
 
-** Contributors **
+**Contributors**
 
 [Olalekan Animashaun](https://github.com/kimolalekan)
