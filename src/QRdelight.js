@@ -4,9 +4,9 @@ import QR from "./QR";
 
 export default class QRdelight extends Component {
   social(data) {
-    let social = `Platform: ${
-      data.platform
-    } \n username: @${username} \n Link: ${link}`;
+    let social = `Platform: ${data.platform} \n username: @${
+      data.username
+    } \n Link: ${data.link}`;
     return social;
   }
 
@@ -81,7 +81,7 @@ export default class QRdelight extends Component {
   render() {
     const data = this.social(this.props.data);
     let qr = QR.makeImage(data);
-    return <img src={qr} />;
+    return <span>{qr}</span>;
   }
 }
 

@@ -1,3 +1,5 @@
+
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -8,19 +10,13 @@ var _createClass = (function() {
       var descriptor = props[i];
       descriptor.enumerable = descriptor.enumerable || false;
       descriptor.configurable = true;
-      if ("value" in descriptor) {
-        descriptor.writable = true;
-      }
+      if ("value" in descriptor) {descriptor.writable = true;}
       Object.defineProperty(target, descriptor.key, descriptor);
     }
   }
   return function(Constructor, protoProps, staticProps) {
-    if (protoProps) {
-      defineProperties(Constructor.prototype, protoProps);
-    }
-    if (staticProps) {
-      defineProperties(Constructor, staticProps);
-    }
+    if (protoProps) {defineProperties(Constructor.prototype, protoProps);}
+    if (staticProps) {defineProperties(Constructor, staticProps);}
     return Constructor;
   };
 })();
@@ -73,11 +69,10 @@ function _inherits(subClass, superClass) {
       configurable: true
     }
   });
-  if (superClass) {
-    Object.setPrototypeOf
-      ? Object.setPrototypeOf(subClass, superClass)
-      : (subClass.__proto__ = superClass);
-  }
+  if (superClass)
+  {Object.setPrototypeOf
+    ? Object.setPrototypeOf(subClass, superClass)
+    : (subClass.__proto__ = superClass);}
 }
 
 var QRdelight = (function(_Component) {
@@ -103,9 +98,9 @@ var QRdelight = (function(_Component) {
           "Platform: " +
           data.platform +
           " \n username: @" +
-          username +
+          data.username +
           " \n Link: " +
-          link;
+          data.link;
         return social;
       }
     },
@@ -219,7 +214,7 @@ var QRdelight = (function(_Component) {
       value: function render() {
         var data = this.social(this.props.data);
         var qr = _QR2.default.makeImage(data);
-        return _react2.default.createElement("img", { src: qr });
+        return qr;
       }
     }
   ]);

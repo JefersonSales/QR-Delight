@@ -38,7 +38,7 @@ var QRdelight = function (_Component) {
   _createClass(QRdelight, [{
     key: "social",
     value: function social(data) {
-      var social = "Platform: " + data.platform + " \n username: @" + username + " \n Link: " + link;
+      var social = "Platform: " + data.platform + " \n username: @" + data.username + " \n Link: " + data.link;
       return social;
     }
   }, {
@@ -115,7 +115,11 @@ var QRdelight = function (_Component) {
     value: function render() {
       var data = this.social(this.props.data);
       var qr = _QR2.default.makeImage(data);
-      return _react2.default.createElement("img", { src: qr });
+      return _react2.default.createElement(
+        "span",
+        null,
+        qr
+      );
     }
   }]);
 
