@@ -1,6 +1,6 @@
 ### Cryptocurrency
 
-** Bitcoin **
+**Bitcoin**
 
 ```javascript
 import React, { Component } from "react";
@@ -17,7 +17,7 @@ export default class MyQRcode extends Component {
 }
 ```
 
-** Ethereum **
+**Ethereum**
 
 ```javascript
 import React, { Component } from "react";

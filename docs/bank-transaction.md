@@ -1,6 +1,6 @@
 ### Bank Transactions
 
-** Usage **
+**Usage**
 
 ```javascript
 import React, { Component } from "react";

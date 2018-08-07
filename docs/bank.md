@@ -1,6 +1,6 @@
 ### Account
 
-** Usage **
+**Usage**
 
 ```javascript
 import React, { Component } from "react";

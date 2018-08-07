@@ -1,6 +1,6 @@
 ### Social
 
-** Facebook **
+**Facebook**
 
 ```javascript
 import React, { Component } from "react";
@@ -18,7 +18,7 @@ export default class MyQRcode extends Component {
 }
 ```
 
-** Twitter **
+**Twitter**
 
 ```javascript
 import React, { Component } from "react";
