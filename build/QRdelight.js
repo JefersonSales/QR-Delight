@@ -115,11 +115,7 @@ var QRdelight = function (_Component) {
     value: function render() {
       var data = this.social(this.props.data);
       var qr = _QR2.default.makeImage(data);
-      return _react2.default.createElement(
-        "span",
-        null,
-        qr
-      );
+      return _react2.default.createElement("img", { src: qr });
     }
   }]);
 

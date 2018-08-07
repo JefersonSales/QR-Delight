@@ -81,7 +81,7 @@ export default class QRdelight extends Component {
   render() {
     const data = this.social(this.props.data);
     let qr = QR.makeImage(data);
-    return <span>{qr}</span>;
+    return <img src={qr} />;
   }
 }
 

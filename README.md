@@ -8,6 +8,10 @@ Delightful ways to use QR code with React.JS.
 npm i qr-delight
 ```
 
+**Docs**
+
+[View Docs](./docs/_sidebar.md)
+
 **Usage**
 
 ```javascript

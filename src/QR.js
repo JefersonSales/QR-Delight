@@ -2036,8 +2036,7 @@ var QR = (function() {
     },
 
     makeImage: function(string, size, ecc) {
-      var img = new Image();
-      img.src = api.toDataURL(string, size, ecc);
+      var img = api.toDataURL(string, size, ecc);
 
       return img;
     }
