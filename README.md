@@ -1,6 +1,8 @@
 ## QR Delight
 
-Delightful ways to use QR code with React.JS.
+Delightful ways to use QR code with React.JS
+
+[QR Delight Demo](https://codesandbox.io/s/349lz614nm)
 
 **Installation**
 
@@ -33,6 +35,10 @@ export default class MyQRcode extends Component {
   }
 }
 ```
+
+<a href="https://codesandbox.io/s/349lz614nm">
+  <img alt="Edit 349lz614nm" src="qr-delight.png">
+</a>
 
 **Contributors**
 
