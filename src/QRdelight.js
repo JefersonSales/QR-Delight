@@ -6,7 +6,7 @@ export default class QRdelight extends Component {
   social(data) {
     let social = `Platform: ${data.platform} \n username: @${
       data.username
-    } \n Link: ${data.link}`;
+      } \n Link: ${data.link}`;
     return social;
   }
 
@@ -33,15 +33,15 @@ export default class QRdelight extends Component {
   bankAccount(data) {
     let account = `Name: ${data.name} \n Bank: ${data.bank} \n Account: ${
       data.account
-    } \n Swift Code: ${data.swift}`;
+      } \n Swift Code: ${data.swift}`;
   }
 
   bankAccountTransaction(data) {
     let account = `Name: ${data.name} \n Bank: ${data.bank} \n Account: ${
       data.account
-    } \n Swift Code: ${data.swift} \n Amount: ${data.amount} \n Currency: ${
+      } \n Swift Code: ${data.swift} \n Amount: ${data.amount} \n Currency: ${
       data.currency
-    }`;
+      }`;
   }
 
   crypto(data) {
@@ -51,7 +51,7 @@ export default class QRdelight extends Component {
   cryptoTransaction(data) {
     let account = `Currency: ${data.currency} \n Wallet: ${
       data.wallet
-    } \n Amount: ${data.amount}`;
+      } \n Amount: ${data.amount}`;
   }
 
   getType() {
@@ -63,6 +63,8 @@ export default class QRdelight extends Component {
       qrtype = this.social(data);
     } else if (type === "link") {
       qrtype = this.link(data);
+    } else if (type === "sms") {
+      qrtype = this.sms(data);
     } else if (type === "email") {
       qrtype = this.email(data);
     } else if (type === "text") {
@@ -76,10 +78,11 @@ export default class QRdelight extends Component {
     } else if (type === "crypto-transaction") {
       qrtype = this.cryptoTransaction(data);
     }
+    return qrtype;
   }
 
   render() {
-    const data = this.social(this.props.data);
+    const data = this.getType();
     let qr = QR.makeImage(data);
     return <img src={qr} />;
   }
